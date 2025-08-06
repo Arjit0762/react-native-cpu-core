@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "react-native-cpu-core": ["../src/index"],
+      "react-native-cpu-core/*": ["../src/*"]
+    }
+  }
+}

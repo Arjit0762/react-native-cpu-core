@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ReactNativeCpuCoreModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.cpucore.ReactNativeCpuCoreModule"]
+  }
+}
