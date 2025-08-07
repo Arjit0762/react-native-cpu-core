@@ -1,5 +1,13 @@
 // Reexport the native module. On web, it will be resolved to ReactNativeCpuCoreModule.web.ts
-// and on native platforms to ReactNativeCpuCoreModule.ts
-export { default } from './ReactNativeCpuCoreModule';
-export { default as ReactNativeCpuCoreView } from './ReactNativeCpuCoreView';
-export * from  './ReactNativeCpuCore.types';
+
+import ReactNativeCpuCoreModule from "./ReactNativeCpuCoreModule";
+
+export * from "./ReactNativeCpuCore.types";
+
+export function getCpuUsage(): Promise<number> {
+  return ReactNativeCpuCoreModule.getCpuUsage();
+}
+
+export function getClockTicksPerSecond(): number {
+  return ReactNativeCpuCoreModule.getClockTicksPerSecond();
+}
