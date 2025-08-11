@@ -30,7 +30,6 @@ export default function App() {
 
   const getClockSpeed = () => {
     const value = getClockTicksPerSecond();
-    console.log("value", value);
     setClockSpeed(value);
   };
 
